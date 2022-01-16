@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{% url 'index' %}" method="post">
+     {% csrf_token %}
+     {{ ozgaruvchi.as_p }}
+
+    <button class="sumbit">Qo'shish</button>
+
+
+
+
+</form>
+</body>
+</html>
